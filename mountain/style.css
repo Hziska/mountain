@@ -1,0 +1,179 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  width: 90%;
+  margin-inline: auto;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("image/header.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+header .hero {
+  position: absolute;
+  top: 57%;
+  right: 50%;
+  transform: translate(50%, -50%);
+}
+header .hero h1 {
+  font-size: 50px;
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+header .navigasi {
+  width: 100%;
+}
+header .navigasi .box-navigasi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+header .navigasi .box-navigasi .box:nth-child(1) h1 {
+  font-size: 39px;
+  color: white;
+}
+header .navigasi .box-navigasi .box:nth-child(2) ul {
+  display: flex;
+  flex-direction: row;
+}
+header .navigasi .box-navigasi .box:nth-child(2) ul li {
+  list-style: none;
+  margin-left: 40px;
+}
+header .navigasi .box-navigasi .box:nth-child(2) ul li i {
+  display: none;
+}
+header .navigasi .box-navigasi .box:nth-child(2) ul li a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.5s ease;
+}
+header .navigasi .box-navigasi .box:nth-child(2) ul li a:hover {
+  color: yellow;
+}
+header .navigasi .box-navigasi .box:nth-child(3) {
+  display: none;
+}
+
+.about {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.about .box-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about .box-about .box:nth-child(1) {
+  padding-right: 25px;
+}
+.about .box-about .box:nth-child(1) h1 {
+  font-size: 44px;
+}
+.about .box-about .box:nth-child(1) p {
+  line-height: 1.9;
+}
+.about .box-about .box:nth-child(2) img {
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+  .about .container .box-about .box:nth-child(2) img {
+    width: 550px;
+  }
+}
+@media screen and (max-width: 990px) {
+  header .hero h1 {
+    font-size: 40px;
+  }
+  header .navigasi .box-navigasi .box:nth-child(2) {
+    display: flex;
+    width: 250px;
+    position: absolute;
+    top: 50px;
+    right: 40px;
+    background-color: white;
+    border-radius: 20px;
+    opacity: 0;
+    transition: all 0.5s ease-in;
+  }
+  header .navigasi .box-navigasi .box:nth-child(2) ul {
+    flex-direction: column;
+  }
+  header .navigasi .box-navigasi .box:nth-child(2) ul li {
+    align-items: center;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-left: 0px;
+  }
+  header .navigasi .box-navigasi .box:nth-child(2) ul li i {
+    display: inline;
+    margin-inline: 10px;
+    font-size: 20px;
+  }
+  header .navigasi .box-navigasi .box:nth-child(2) ul li a {
+    color: black;
+  }
+  header .navigasi .box-navigasi .menu-navigasi.menu-active {
+    opacity: 1;
+    top: 100px;
+  }
+  header .navigasi .box-navigasi .box:nth-child(3) {
+    display: block;
+  }
+  header .navigasi .box-navigasi .box:nth-child(3) i {
+    font-size: 30px;
+  }
+  .about .box-about {
+    flex-direction: column-reverse;
+  }
+  .about .box-about .box:nth-child(1) {
+    text-align: center;
+    margin-top: 30px;
+  }
+  .about .box-about .box:nth-child(2) img {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 685px) {
+  header .hero h1 {
+    font-size: 34px;
+  }
+  .about .container .box-about .box:nth-child(2) img {
+    width: 350px;
+  }
+  .about .container .box-about .box:nth-child(1) h1 {
+    font-size: 35px;
+  }
+  .about .container .box-about .box:nth-child(1) p {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 460px) {
+  header .hero h1 {
+    font-size: 25px;
+  }
+  .about .container .box-about .box:nth-child(2) img {
+    width: 250px;
+  }
+  .about .container .box-about .box:nth-child(1) h1 {
+    font-size: 30px;
+  }
+  .about .container .box-about .box:nth-child(1) p {
+    font-size: 14px;
+  }
+}/*# sourceMappingURL=style.css.map */
