@@ -8,6 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- animate -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Landing Page || Mountain</title>
 </head>
 <body>
@@ -16,7 +23,7 @@
     <header>
         <section class="navigasi">
             <div class="container">
-                <div class="box-navigasi">
+                <div class="box-navigasi animate__animated animate__fadeInDown">
                     <!-- box 1 -->
                     <div class="box">
                         <h1>LOGO</h1>
@@ -26,23 +33,23 @@
                         <ul>
                             <li>
                                 <i class="ri-home-4-fill"></i>
-                                <a href="#">Home</a>
+                                <a href="#home">Home</a>
                             </li>
                             <li>
                                 <i class="ri-information-fill"></i>
-                                <a href="#">About</a>
+                                <a href="#about">About</a>
                             </li>
                             <li>
                                 <i class="ri-dashboard-fill"></i>
-                                <a href="#">Famous</a>
+                                <a href="#famous">Famous</a>
                             </li>
                             <li>
                                 <i class="ri-image-2-fill"></i>
-                                <a href="#">Galery</a>
+                                <a href="#galery">Galery</a>
                             </li>
                             <li>
                                 <i class="ri-phone-fill"></i>
-                                <a href="#">Contact</a>
+                                <a href="#contact">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -57,22 +64,23 @@
 
         <!-- hero -->
         <section class="hero">
-            <h1>Mountains are the highest peaks on earth</h1>
+            <h1 class="animate__animated animate__pulse">Mountains are the highest peaks on earth</h1>
         </section>
         <!-- hero -->
 
     </header>
+
     <!-- About -->
-    <section class="about">
+    <section id="about" class="about">
         <div class="container">
             <div class="box-about">
                 <!-- box 1 -->
-                <div class="box">
+                <div class="box" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="500">
                     <h1>Mountain</h1>
                     <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium vel quod, harum quisquam sint perspiciatis eos. Doloremque ipsam dicta officia perferendis eos porro. Deleniti est dolore eius, nam veritatis non?</p>
                 </div>
                 <!-- box 2 -->
-                <div class="box">
+                <div class="box" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="100">
                     <img src="image/1.jpg" alt="about">
                 </div>
             </div>
@@ -80,6 +88,90 @@
     </section>
     <!-- About -->
 
+    <!-- famous -->
+    <section id="famous" class="famous">
+        <div class="container">
+            <div class="box-famous">
+                <div class="box" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="100">
+                    <img src="image/fuji-famous.jpg" alt="">
+                    <h1>Fuji Mountain</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique corporis quibusdam laborum voluptate debitis?</p>
+                </div>
+                <div class="box" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="300">
+                    <img src="image/everest-famous.jpg" alt="">
+                    <h1>Everest Mountain</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique corporis quibusdam laborum voluptate debitis?</p>
+                </div>
+                <div class="box" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="500">
+                    <img src="image/k2-famous.jpg" alt="">
+                    <h1>K2 Mountain</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad similique corporis quibusdam laborum voluptate debitis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- famous -->
+
+    <!-- galety -->
+    <section id="galery" class="galery">
+        <div class="container">
+            <div class="box-galery">
+              <img src="image/1.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="100">
+              <img src="image/2.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="300">
+              <img src="image/3.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="500">
+              <img src="image/4.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="700">
+              <img src="image/5.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="900">
+              <img src="image/6.jpg" alt="" data-aos="zoom-in-up" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="1100">
+            </div>
+        </div>
+    </section>
+    <!-- galety -->
+
+    <!-- contact -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="box-contact">
+                <h1  data-aos="zoom-in-right" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="100">Contact</h1>
+
+                <form action=""  data-aos="zoom-in-left" data-aos-duration="1000" data-aos="zoom-in-up" data-aos-delay="1000">
+                    <table>
+                        <tr>
+                            <td><label for="nama">Nama</label ></td>
+                            <td><input placeholder="masukan nama" type="text" id="nama" id="nama"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">email</label ></td>
+                            <td><input placeholder="masukan email" type="text" id="email" id="email"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="pesan">pesan</label ></td>
+                            <td><textarea placeholder="masukan pesan" name="pesan" id="pesan"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <button>
+                                kirim
+                            </button></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- contact -->
+
+    <!-- footer -->
+    <section class="footer">
+        <p>&copy 2023 By Hazza Iskandar</p>
+    </section>
+    <!-- footer -->
+
+
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
     <script src="main.js"></script>
 </body>
 </html>

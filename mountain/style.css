@@ -6,6 +6,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  background-color: #e8ecfc;
+}
+
 .container {
   width: 90%;
   margin-inline: auto;
@@ -91,6 +95,89 @@ header .navigasi .box-navigasi .box:nth-child(3) {
   border-radius: 10px;
 }
 
+.famous {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #03045e;
+  align-items: center;
+}
+.famous .box-famous {
+  display: flex;
+  justify-content: space-between;
+}
+.famous .box-famous img {
+  width: 100%;
+  border-radius: 20px;
+  margin-bottom: 20px;
+}
+.famous .box {
+  margin-inline: 20px;
+  text-align: center;
+  color: white;
+}
+
+.galery {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: 30px 0 30px 0;
+  align-items: center;
+}
+.galery .box-galery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.galery .box-galery img {
+  margin: 10px;
+  width: 300px;
+}
+
+.contact {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: #03045e;
+  color: white;
+}
+.contact .box-contact {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.contact .box-contact h1 {
+  font-size: 40px;
+  font-weight: bold;
+}
+.contact .box-contact form table tr {
+  display: flex;
+  flex-direction: column;
+  margin: 25px 0px;
+}
+.contact .box-contact form table tr td label {
+  font-size: 20px;
+}
+.contact .box-contact form table tr td input {
+  padding: 10px 200px 10px 10px;
+}
+.contact .box-contact form table tr td textarea {
+  padding: 10px 235px 100px 10px;
+}
+.contact .box-contact form table tr td button {
+  padding: 5px 30px;
+  background-color: white;
+  border: none;
+  border-radius: 10px;
+}
+
+.footer p {
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 1200px) {
   .about .container .box-about .box:nth-child(2) img {
     width: 550px;
@@ -148,8 +235,23 @@ header .navigasi .box-navigasi .box:nth-child(3) {
   .about .box-about .box:nth-child(2) img {
     width: 400px;
   }
+  .famous {
+    height: 100%;
+  }
+  .famous .box-famous {
+    flex-direction: column;
+  }
+  .famous .box-famous .box {
+    margin-block: 30px;
+  }
+  .famous .box-famous .box img {
+    width: 300px;
+  }
+  .galery {
+    height: 100%;
+  }
 }
-@media screen and (max-width: 685px) {
+@media screen and (max-width: 768px) {
   header .hero h1 {
     font-size: 34px;
   }
@@ -161,6 +263,19 @@ header .navigasi .box-navigasi .box:nth-child(3) {
   }
   .about .container .box-about .box:nth-child(1) p {
     font-size: 16px;
+  }
+  .contact {
+    height: 100%;
+    padding-top: 20px;
+  }
+  .contact .box-contact {
+    flex-direction: column;
+  }
+  .contact .box-contact form {
+    padding-top: 20px;
+  }
+  .contact .box-contact form table tr td textarea {
+    padding: 10px 230px 5px 10px;
   }
 }
 @media screen and (max-width: 460px) {
@@ -175,5 +290,43 @@ header .navigasi .box-navigasi .box:nth-child(3) {
   }
   .about .container .box-about .box:nth-child(1) p {
     font-size: 14px;
+  }
+  .famous .box-famous .box img {
+    width: 250px;
+  }
+  .famous .box-famous .box h1 {
+    font-size: 24px;
+  }
+  .famous .box-famous .box p {
+    font-size: 15px;
+  }
+  .contact .box-contact form table tr td input {
+    padding: 10px 80px 10px 10px;
+  }
+  .contact .box-contact form table tr td textarea {
+    padding: 10px 110px 5px 10px;
+  }
+}
+@media screen and (max-width: 320px) {
+  .about .box-about .box:nth-child(2) img {
+    width: 150px;
+  }
+  .famous .box-famous .box img {
+    width: 200px;
+  }
+  .famous .box-famous .box h1 {
+    font-size: 18px;
+  }
+  .famous .box-famous .box p {
+    font-size: 10px;
+  }
+  .galery .box-galery img {
+    width: 250px;
+  }
+  .contact .box-contact form table tr td input {
+    padding: 10px 30px 10px 10px;
+  }
+  .contact .box-contact form table tr td textarea {
+    padding: 10px 60px 5px 10px;
   }
 }/*# sourceMappingURL=style.css.map */
